@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### API keys
+
+ipinfo.io db2c9fdfc168df
+
+**Weather API**
+https://openweathermap.org/ 9161188df1944460c69903f79ff5296d
+
+**Images API**
+unsplash.com
+Access Key hi-l0tz_mzIWeZ_qdldnkUwZsvMm40hpT2_1VglbS9A
+
+Secret key LW547QC6IW0LFGBmOenTXuU2vLh_vkbnf2_5THmqOKg
+
+**Maps API**

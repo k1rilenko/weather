@@ -1,0 +1,15 @@
+<div class="day">
+  <p class="title">{{ weatherData.dt * 1000 | date: 'EE HH:mm' }}</p>
+  <div class="row">
+    <p class="temp">
+      <span class="temp__value">{{ weatherData.main.temp | number: '1.0-1' }}</span>
+      <sup class="temp__icon">°</sup>
+    </p>
+    <div class="icon">
+      <img
+        [src]="'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '@2x.png'"
+        [alt]="weatherData.weather[0].description"
+      />
+    </div>
+  </div>
+</div>

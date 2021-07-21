@@ -1,0 +1,33 @@
+.position {
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.weather {
+  display: flex;
+  margin-bottom: 70px;
+  &__temperature {
+    display: flex;
+    font-size: 306px;
+    font-weight: 700;
+    sup {
+      font-size: 154px;
+    }
+  }
+  &__icon img {
+    width: 200px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+  &__value {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+}

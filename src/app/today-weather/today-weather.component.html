@@ -1,0 +1,23 @@
+<ng-container *ngIf="weather$ | async as weather">
+  <div class="wrapper">
+    <p class="position">{{ weather.name }}</p>
+    <p class="date"></p>
+  </div>
+  <div class="weather">
+    <span class="weather__temperature">
+      {{ weather.main.temp | number: '1.0-1' }}
+      <sup>°</sup>
+    </span>
+    <div class="weather__data">
+      <div class="weather__icon">
+        <img [src]="'http://openweathermap.org/img/wn/' + weather.weather[0].icon + '@2x.png'" alt="" />
+      </div>
+      <ul class="weather__list">
+        <li class="weather__value">{{ weather.weather[0].description }}</li>
+        <li class="weather__value">Feels like: {{ weather.main.feels_like }}</li>
+        <li class="weather__value">Wind: {{ weather.wind.speed }}</li>
+        <li class="weather__value">Humidity: {{ weather.main.humidity }}</li>
+      </ul>
+    </div>
+  </div>
+</ng-container>
